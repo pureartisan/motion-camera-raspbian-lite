@@ -7,7 +7,7 @@ cd ~/
 HOME_DIR=$(pwd)
 
 MC_RASP_LITE="motion-camera-raspbian-lite"
-MC_RASP_LITE_GIT='https://github.com/pureartisan/magic-mirror-raspbian-lite.git'
+MC_RASP_LITE_GIT="https://github.com/pureartisan/$MC_RASP_LITE.git"
 MC_RASP_LITE_DIR="$HOME_DIR/$MC_RASP_LITE"
 
 MC_APP_DIR="$HOME_DIR/motion-camera-app"
