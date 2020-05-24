@@ -3,6 +3,8 @@
 info "Copying app files to '$MC_APP_DIR'"
 cp $MC_RASP_LITE_DIR/app/* $MC_APP_DIR
 
+mkdir -p $MC_APP_CAPTURES_DIR
+
 # # replace placeholders
 # FILES=$MC_APP_DIR/*
 # for f in $FILES

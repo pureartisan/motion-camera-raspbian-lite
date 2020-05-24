@@ -11,6 +11,7 @@ MC_RASP_LITE_GIT="https://github.com/pureartisan/$MC_RASP_LITE.git"
 MC_RASP_LITE_DIR="$HOME_DIR/$MC_RASP_LITE"
 
 MC_APP_DIR="$HOME_DIR/motion-camera-app"
+MC_APP_CAPTURES_DIR="$MC_APP_DIR/captures"
 
 MC_SETUP=true
 
@@ -126,6 +127,7 @@ cd ~/ > /dev/null
 export HOME_DIR
 export MC_RASP_LITE_DIR
 export MC_APP_DIR
+export MC_APP_CAPTURES_DIR
 export MC_SETUP
 
 # start the proper setup
