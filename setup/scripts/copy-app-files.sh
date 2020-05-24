@@ -3,6 +3,7 @@
 info "Copying app files to '$MC_APP_DIR'"
 cp $MC_RASP_LITE_DIR/app/* $MC_APP_DIR
 
+# create capture path
 mkdir -p $MC_APP_CAPTURES_DIR
 
 # # replace placeholders
@@ -16,3 +17,4 @@ mkdir -p $MC_APP_CAPTURES_DIR
 
 # make files executable
 sudo chmod a+x -R "$MC_APP_DIR"
+sudo chmod 777 -R "$MC_APP_CAPTURES_DIR"
