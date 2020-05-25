@@ -8,16 +8,13 @@ then
 else
 
     MOTION_SETUP_FILE="motion-installer.deb"
-    MOTION_SETUP_URL="https://github.com/Motion-Project/motion/releases/download/release-4.3.1/buster_motion_4.3.1-1_armhf.deb"
-
-    info "Installing gdebi-core"
-    sudo apt-get install -y gdebi-core
+    MOTION_SETUP_URL="https://github.com/Motion-Project/motion/releases/download/release-4.3.1/pi_buster_motion_4.3.1-1_armhf.deb"
 
     info "Downloading latest Motion software"
     wget "$MOTION_SETUP_URL" -O "$MOTION_SETUP_FILE"
 
     info "Install Moition software"
-    sudo gdebi "$MOTION_SETUP_FILE"
+    sudo dpkg -i "$MOTION_SETUP_FILE"
     # remove install file
     sudo rm -f "$MOTION_SETUP_FILE"
 
