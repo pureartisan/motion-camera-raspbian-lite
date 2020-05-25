@@ -10,8 +10,10 @@ mkdir -p $MC_APP_CAPTURES_DIR
 FILES=$MC_APP_DIR/*
 for f in $FILES
 do
-    sudo sed -i -e "s|%%MC_DIR%%|$MC_DIR|g" "$f"
-    sudo sed -i -e "s|%%MC_APP_CAPTURES_DIR%%|$MC_APP_CAPTURES_DIR|g" "$f"
+    if [ -f "$f" ]; then
+        sudo sed -i -e "s|%%MC_DIR%%|$MC_DIR|g" "$f"
+        sudo sed -i -e "s|%%MC_APP_CAPTURES_DIR%%|$MC_APP_CAPTURES_DIR|g" "$f"
+    fi
 done
 
 # make files executable
