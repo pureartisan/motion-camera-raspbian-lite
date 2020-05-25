@@ -26,5 +26,5 @@ else
 
 fi
 
-echo "Motion version:"
-motion -v
+echo "Motion:"
+which motion
