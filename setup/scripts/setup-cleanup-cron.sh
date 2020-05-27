@@ -2,7 +2,9 @@
 
 # copy dyn dns update script
 CLEANUP_SCRIPT="$MC_APP_DIR/cleanup.sh"
-sudo chmod 755 $CLEANUP_SCRIPT
+sudo touch $CLEANUP_SCRIPT
+sudo chown root:root $CLEANUP_SCRIPT
+sudo chmod og-rwx $CLEANUP_SCRIPT
 
 echo "Add cron job to check and update ip every minute"
 CRONTAB_FILE=/etc/cron.d/motion-camera-cleanup
