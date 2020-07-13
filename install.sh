@@ -65,7 +65,7 @@ drawLine
 
 echo "Motion Camera software will be installed on this Raspberry Pi."
 
-echo "Would you like to setup the Magic Mirror server on this Raspberry Pi? [Y/n]"
+echo "Would you like to setup the Motion Camera on this Raspberry Pi? [Y/n]"
 while true; do
     read input
     case $input in
